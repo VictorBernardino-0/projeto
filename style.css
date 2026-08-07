@@ -38,7 +38,6 @@ body{
 body *{
     font-family: "Inter", sans-serif;
     color: var(--text-color);
-    
 }
 
 #container{
@@ -86,10 +85,13 @@ body *{
     z-index: 1;
     top: 50%;
     transform: translateY(-50%);
+    animation: slideout 0.3s;
 }
 .light #swith button {
-    right: 0;
-    left: initial;
+   animation: slidein 0.3s forwards;
+}
+#swith button:hover{
+    outline: 8px solid var(--highlight-color);
 }
 
 #swith span{
@@ -173,4 +175,22 @@ footer {
     .light{
         --bg-url: url(./assets/bg-desktop-light.jpg);
     }
+}
+
+/* animaçoes*/
+@keyframes slidein{
+    from{
+        left: 0;
+    }
+    to{
+        left: 50%;
+    }
+}
+@keyframes slideout{
+    from{
+        left: 50%;
+    }
+     to{
+        left: 0;
+     }
 }
