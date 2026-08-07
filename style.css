@@ -33,6 +33,7 @@ body{
 
     /*background: color image repeat position/size */
     background: var(--bg-url) no-repeat top center/cover;
+    height: 100vh;
 }
 body *{
     font-family: "Inter", sans-serif;
@@ -164,4 +165,12 @@ footer {
     font-size: 14px;
 
 }
-
+/* media queries*/
+ @media (max-width: 700px) {
+    :root{ 
+        --bg-url: url(./assets/bg-desktop.jpg);
+    }
+    .light{
+        --bg-url: url(./assets/bg-desktop-light.jpg);
+    }
+}
