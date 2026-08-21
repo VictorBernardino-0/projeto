@@ -54,7 +54,7 @@ Além disso, aprendi a utilizar o `localStorage` para salvar a última opção d
 ## 🌐 Projeto online
 
 <p align="center">
-  <a href="https://victorbernardino-tec.github.io/projeto/">
+  <a href="https://victorbernardino-tec.github.io/devlinks-tema-claro-escuro/">
     Acesse o projeto online
   </a>
 </p>
