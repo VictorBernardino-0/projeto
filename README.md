@@ -33,6 +33,13 @@ Este projeto foi desenvolvido utilizando:
 * LocalStorage
 * Git e GitHub
 
+ ## ✨ Funcionalidades
+
+- Alternância entre tema claro e escuro
+- Salvamento da preferência de tema com LocalStorage
+- Layout adaptável a diferentes dispositivos
+- Links para redes e contatos
+
 ## 💻 Desenvolvimento
 
 Utilizei o HTML para criar toda a estrutura da página, incluindo as áreas destinadas aos textos, links e imagens.
