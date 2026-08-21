@@ -1,45 +1,73 @@
-<h1 align="center"> DevLinks </h1>
+<h1 align="center">DevLinks</h1>
 
 <p align="center">
-Programa exclusivo e gratuito, promovido pela Rocketseat para ensino de tecnologias WEB. <br/>
-<a href="https://lp.rocketseat.com.br/devlinks/inscricao?utm_source=github&utm_medium=descricao&utm_campaign=capture-devlinks&utm_term=organic&utm_content=descricao-github-mayk-brito">Estude esse projeto em formato de vídeo clicando aqui.</a>
+Projeto desenvolvido durante meus estudos de Análise e Desenvolvimento de Sistemas.
 </p>
 
 <p align="center">
+  <a href="#-objetivo">Objetivo</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#memo-licença">Licença</a>
-</p>
-
-<p align="center">
-  <img alt="License" src="https://img.shields.io/static/v1?label=license&message=MIT&color=49AA26&labelColor=000000">
+  <a href="#-aprendizados">Aprendizados</a>
 </p>
 
 <br>
 
 <p align="center">
-  <img alt="projeto DevLinks" 
-  src=".github/Preview.png" width="100%">
+  <img alt="Preview do projeto" src=".github/Preview.png" width="100%">
 </p>
+
+## 🎯 Objetivo
+
+O objetivo deste projeto foi criar uma página de links e informações pessoais, utilizando HTML, CSS e JavaScript.
+
+O projeto também possui a opção de alternar entre os temas claro e escuro, buscando proporcionar uma melhor experiência visual para o usuário.
 
 ## 🚀 Tecnologias
 
-Esse projeto foi desenvolvido com as seguintes tecnologias:
+Este projeto foi desenvolvido utilizando:
 
-- HTML e CSS
-- JavaScript
-- Git e Github
-- Figma
+* HTML
+* CSS
+* JavaScript
+* Google Fonts
+* LocalStorage
+* Git e GitHub
 
-## 💻 Projeto
+ ## ✨ Funcionalidades
 
-O DevLinks é um agregador de links para usar como cartão de visitas online.
+- Alternância entre tema claro e escuro
+- Salvamento da preferência de tema com LocalStorage
+- Layout adaptável a diferentes dispositivos
+- Links para redes e contatos
 
-- [Acesse o projeto finalizado, online](https://victorbernardino-tec.github.io/projeto/)
+## 💻 Desenvolvimento
 
-- [Assistir aulas](https://lp.rocketseat.com.br/devlinks/inscricao?utm_source=github&utm_medium=descricao&utm_campaign=capture-devlinks&utm_term=organic&utm_content=descricao-github-mayk-brito)
+Utilizei o HTML para criar toda a estrutura da página, incluindo as áreas destinadas aos textos, links e imagens.
 
-## 🔖 Layout
+Com CSS, trabalhei a organização visual da página, centralização dos elementos, bordas, paddings, fontes e os temas claro e escuro.
 
-Você pode visualizar o layout do projeto através [DESSE LINK](https://www.figma.com/community/file/1187422022288947321). É necessário ter conta no [Figma](https://figma.com) para acessá-lo.
+O JavaScript foi utilizado para programar a troca de temas, utilizando condições com `if` e `else`.
+
+Também utilizei o `localStorage` para salvar a última opção de tema escolhida pelo usuário.
+
+## 📚 O que aprendi
+
+Com esse projeto, aprendi sobre displays do CSS, como `block` e `inline`, além de como centralizar elementos e utilizar bordas e paddings para melhorar o visual.
+
+Também aprendi a utilizar funções básicas com `if` e `else` para realizar a mudança de tema e configurar uma transição mais fluida utilizando CSS.
+
+Além disso, aprendi a utilizar o `localStorage` para salvar a última opção de tema utilizada pelo usuário.
+
+## 🌐 Projeto online
+
+<p align="center">
+  <a href="https://victorbernardino-tec.github.io/devlinks-tema-claro-escuro/">
+    Acesse o projeto online
+  </a>
+</p>
+
+---
+
+<p align="center">
+Desenvolvido por <strong>Victor M. S. Bernardino</strong>
+</p>
