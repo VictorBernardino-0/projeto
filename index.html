@@ -1,80 +1,73 @@
 <!doctype html>
-<html lang="pt-br" class="light">
+<html lang="pt-br">
   <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VictorLinks</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet"
     />
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>VictorLinks</title>
     <link rel="stylesheet" href="style.css" />
+    <script>
+      const savedTheme = localStorage.getItem("theme");
+      if (savedTheme === "dark") {
+        document.documentElement.classList.add("dark");
+      } else {
+        document.documentElement.classList.add("light");
+      }
+    </script>
   </head>
   <body>
     <div id="container">
       <div id="profile">
-        <img
-          src="./assets/avatar-light.png"
-          alt="foto de perfil light."
-        />
-
+        <img src="./assets/avatar-light.png" alt="Foto de perfil" />
         <p>@VictorBernardino-tec</p>
       </div>
 
-      <div id="swith" onclick="toggleMode()"> 
-        <button>
-          <img src="">
-        </button>
+      <div id="switch" role="button" tabindex="0" aria-label="Alternar entre tema claro e escuro">
+        <button type="button" aria-label="Alternar tema"></button>
         <span></span>
       </div>
+
       <ul>
         <li>
-          <a href="#">Inscrever-se no NLW</a>
-        </li>
-
-        <li>
-          <a href="https://github.com/VictorBernardino-0/projeto" target="_blank">Acessar o meu portifólio</a>
+          <a href="https://app.rocketseat.com.br/node/mission-discover" target="_blank" rel="noopener noreferrer">Conheça a Rocketseat</a>
         </li>
         <li>
-          <a href="https://app.rocketseat.com.br/explorer" target="_blank"
-            >conheça o explorer</a
-          >
+          <a href="https://github.com/VictorBernardino-tec" target="_blank" rel="noopener noreferrer">Acesse o meu GitHub</a>
         </li>
         <li>
-          <a href="https://github.com/VictorBernardino-tec" target="_blank"
-            >Acessar o meu github</a
-          >
+          <a href="https://github.com/VictorBernardino-tec" target="_blank" rel="noopener noreferrer">Acesse o meu portfólio</a>
         </li>
       </ul>
-    <div id="social-links">
-        <a href="https://github.com/VictorBernardino-0" target="_blank">
-         <ion-icon name="logo-github"></ion-icon>
-    </a>
-        <a href="https://instagram.com/victor_bernardino_of" target="_blank">
-         <ion-icon name="logo-instagram"></ion-icon>
-         </a>
-        <a href="https://youtube.com/@victorbernardino6346" target="_blank">
-         <ion-icon name="logo-youtube"></ion-icon>
-         </a>
-        <a href="https://linkedin.com/in/victor-bernardino-320651239 " target="_blank">
-         <ion-icon name="logo-linkedin"></ion-icon>
-         </a>
-        </div>
 
-        <footer>Feito com ♥ por <a href="https://github.com/VictorBernardino-0" target="_blank">Victor Bernardino</a></footer>
+      <div id="social-links">
+        <a href="https://github.com/VictorBernardino-tec" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+          <ion-icon name="logo-github"></ion-icon>
+        </a>
+        <a href="https://instagram.com/victor_bernardino_of" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          <ion-icon name="logo-instagram"></ion-icon>
+        </a>
+        <a href="https://youtube.com/@victorbernardino6346" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+          <ion-icon name="logo-youtube"></ion-icon>
+        </a>
+        <a href="https://linkedin.com/in/victor-bernardino-320651239" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <ion-icon name="logo-linkedin"></ion-icon>
+        </a>
+      </div>
 
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.js"
-    ></script>
+      <footer>
+        Feito com ♥ por
+        <a href="https://github.com/VictorBernardino-tec" target="_blank" rel="noopener noreferrer">Victor Bernardino</a>
+      </footer>
+    </div>
 
+    <script type="module" src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
