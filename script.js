@@ -1,34 +1,41 @@
 const html = document.documentElement;
-const img = document.querySelector("#profile img");
+const profileImage = document.querySelector("#profile img");
+const themeSwitch = document.querySelector("#switch");
 
+function applyTheme(theme) {
+  const isDark = theme === "dark";
+
+  html.classList.toggle("dark", isDark);
+  html.classList.toggle("light", !isDark);
+
+  if (profileImage) {
+    profileImage.setAttribute(
+      "src",
+      isDark ? "./assets/avatar.png" : "./assets/avatar-light.png"
+    );
+  }
+
+  localStorage.setItem("theme", isDark ? "dark" : "light");
+}
 
 function toggleMode() {
-  const currentTheme = html.classList.contains("light")
-  ? "light"
-  : "dark";
-  
-  const newTheme = currentTheme === "light"
-  ? "dark"
-  : "light";
-  
-  applyTheme(newTheme);
+  const currentTheme = html.classList.contains("dark") ? "dark" : "light";
+  applyTheme(currentTheme === "dark" ? "light" : "dark");
 }
 
 function loadTheme() {
-  const savedTheme = localStorage.getItem("theme") || "light";
-  
-  applyTheme(savedTheme);
+  const savedTheme = localStorage.getItem("theme");
+  applyTheme(savedTheme === "dark" ? "dark" : "light");
 }
-function applyTheme(theme) {
-    if (theme === "dark") {
-        html.classList.remove("light");
-        img.setAttribute("src", "./assets/avatar.png");
-    } else {
-        html.classList.add("light");
-        img.setAttribute("src", "./assets/avatar-light.png");
-    }
 
-    localStorage.setItem("theme", theme);
+if (themeSwitch) {
+  themeSwitch.addEventListener("click", toggleMode);
+  themeSwitch.addEventListener("keydown", (event) => {
+    if (event.key === "Enter" || event.key === " ") {
+      event.preventDefault();
+      toggleMode();
+    }
+  });
 }
 
 loadTheme();
